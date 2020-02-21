@@ -1,0 +1,52 @@
+package chap04;
+
+public class CircleDemo6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle6 myCircle = new Circle6(10.0, "내꺼");
+		Circle6 yourCircle = new Circle6(5.0, "니꺼");
+		
+		System.out.println("변수 원본");
+		myCircle.print();
+		
+		myCircle.localValueUp();
+		myCircle.staticValueUp();
+		myCircle.localValueUp();
+		myCircle.staticValueUp();
+		
+		System.out.println("카운트 후의 값");
+		myCircle.print();
+		
+		System.out.println("-------------");
+		yourCircle.print();
+		
+		
+	}
+
+}
+
+class Circle6 {
+	String name; //멤버변수 0
+	double radius; //멤버 변수1
+	int numCircles =0; //멤버 변수2
+	static int numOfCircles =0;//멤버 변수3, static을 사용해 공유되는 변수
+	
+	public Circle6(double radius, String name) {
+		this.radius =radius;
+		this.name =name;
+	}
+	
+	public void localValueUp() {
+		numCircles++;
+	}
+	
+	public void staticValueUp() {
+		numOfCircles++;
+	}
+	
+	public void print() {
+		System.out.println(name+ "의 numOfCircles원의 개수: " + Circle6.numOfCircles);
+		System.out.println(name+ "의 numCircles원의 개수: " + this.numCircles);
+	}
+}
