@@ -25,7 +25,7 @@ class Printer2 {
 			result = "현재"+ numOfPapers +"남아있다";
 		}
 		else {
-			result = "용지가 읎다";
+			result = "용지가 업다";
 		}
 		return result;
 	}
