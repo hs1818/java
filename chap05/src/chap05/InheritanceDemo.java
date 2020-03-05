@@ -1,5 +1,7 @@
 package chap05;
 
+
+
 public class InheritanceDemo {
 
 	public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class InheritanceDemo {
 		
 		c1.findRadius(); //c1은 private사용한거 빼고 다 사용 가능
 		c1.findArea();
-		
+
 		System.out.println("\n공: ");
 		c2.findRadius();
 		c2.findColor();
