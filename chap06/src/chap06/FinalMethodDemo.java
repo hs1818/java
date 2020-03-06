@@ -12,8 +12,9 @@ public class FinalMethodDemo {
 
 class Chess {
 	enum ChessPlayer {
-		WHITE, BLACK
+		WHITE, BLACK, BLUE, GREEN, RED
 	}
+	
 	final ChessPlayer getFirstPlayer() {
 		return ChessPlayer.WHITE;
 	}

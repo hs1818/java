@@ -4,7 +4,7 @@ public class OverTypeDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Vehicle v =new Vehicle();
+		Vehicle v =new Car();
 		System.out.println(v.name);
 		v.whoami(); //오버라이딩 된 whoami가 실행
 		v.move();

@@ -22,7 +22,7 @@ public class StaticImportDemo {
 		}
 		System.out.println();
 		
-		System.out.println(Calendar.JANUARY);
+		System.out.println(Calendar.DECEMBER);
 		Calendar.getInstance();
 	}
 

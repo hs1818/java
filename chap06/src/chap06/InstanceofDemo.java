@@ -11,6 +11,7 @@ public class InstanceofDemo {
 		//s´Â studentÀÇ °´Ã¼
 		System.out.println(s instanceof Student);
 		System.out.println(p instanceof Student);
+		System.out.println(p instanceof Person); 
 		
 		downcast(s);
 	}
